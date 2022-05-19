@@ -1,4 +1,4 @@
-FROM asyrafduyshart/go-reverse-proxy  as builder
+FROM asyrafduyshart/go-reverse-proxy:1.0.0  as builder
 
 FROM asyrafduyshart/nginx-ddos-redirect:1.2.0
 
