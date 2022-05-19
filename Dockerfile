@@ -12,7 +12,7 @@ RUN apt -y install supervisor
 
 COPY --from=builder /root/app /usr/local/bin/app
 
-ADD service_script.conf /src/supervisor/service_script.conf
+ADD service_script.conf /etc/supervisor/conf.d/supervisord.conf
 
 # Initializing Redis server and Gunicorn server from supervisors
-CMD ["supervisord","-c","/src/supervisor/service_script.conf"]
+CMD ["/usr/bin/supervisord"]
