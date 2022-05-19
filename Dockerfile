@@ -2,7 +2,9 @@ FROM asyrafduyshart/go-reverse-proxy  as builder
 
 FROM asyrafduyshart/nginx-ddos-redirect:1.2.0
 
-RUN apt-get install musl nano
+RUN apt-get install musl
+
+RUN apt-get install nano
 
 RUN apt -y install supervisor
 
