@@ -1,6 +1,6 @@
 FROM asyrafduyshart/go-reverse-proxy:1.0.0  as builder
 
-FROM asyrafduyshart/nginx-ddos-redirect:1.2.0
+FROM asyrafduyshart/nginx-ddos-redirect:1.2.1
 
 RUN apt-get update
 
